@@ -2,15 +2,17 @@ Attribute VB_Name = "Importacion_SQL_Server"
 
 Function IMPORTACION_SQLSERVER(Tabla As String, Columnas As Integer, ParamArray Valores() As Variant) As String
 
-Dim Posicion, Posicion2, Campos, Conteo, CantidadC, ConteoB As Integer
+'Declaraciones
+
+Dim Posicion, Posicion2, Conteo, CantidadC, ConteoB As Integer
 
 Dim Cadena, Cadena2, Atributos, Registros As String
 
 Dim Txt As Variant
 
-Cadena = Join(Valores(), ",")
-
 'Extraccion de los atributos:
+
+Cadena = Join(Valores(), ",")
 
 CantidadC = 0
 
@@ -109,6 +111,8 @@ Next Txt
 Terminar:
 
 Registros = Mid(Cadena2, 1, Len(Cadena2) - 1)
+
+'Fin
 
 IMPORTACION_SQLSERVER = "INSERT INTO " + Tabla + " (" + Atributos + ") VALUES (" + Registros + ");"
 
