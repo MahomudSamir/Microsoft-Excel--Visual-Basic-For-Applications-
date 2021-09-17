@@ -32,12 +32,12 @@ de cada entidad, siendo 1 para valores tipo String y 0 para valores tipo Int.
 
 Ejemplo:
 
- A B C
-1 COD YEAR PAIS 
+-A----B----------C
+1-COD-YEAR-PAIS 
 
-2 002 01/01/1997 BRA
+2-002-01/01/1997-BRA
 
-3 003 06/06/1998 ITA
+3-003-06/06/1998-ITA
 
 En el rango que va de A1:C3 para la extraccion de datos se define la formula =IMPORTACION_SQL() como:
 
@@ -45,9 +45,9 @@ En el rango que va de A1:C3 para la extraccion de datos se define la formula =IM
 
 Siendo el resultado:
 
- A B C D
-1 COD YEAR PAIS  
+-A----B----------C---D
+1-COD-YEAR-PAIS
 
-2 001 01/01/1997 BRA INSERT INTO Country_Table (COD,YEAR,PAIS) VALUES (001,19970101,'BRA');
+2-001-01/01/1997-BRA-INSERT INTO Country_Table (COD,YEAR,PAIS) VALUES (001,19970101,'BRA');
 
-3 003 06/06/1998 ITA INSERT INTO Country_Table (COD,YEAR,PAIS) VALUES (002,19980606,'ITA');
+3-003-06/06/1998-ITA-INSERT INTO Country_Table (COD,YEAR,PAIS) VALUES (002,19980606,'ITA');
