@@ -1,7 +1,7 @@
 # Microsoft Excel (Visual Basic For Applications)
  
 *************************************
-************ Bienvenidos ************
+             Bienvenidos 
 *************************************
 
 1) Buscador_Texto.bas
@@ -38,9 +38,6 @@ Ejemplo:
 2 002 01/01/1997 BRA
 
 3 003 06/06/1998 ITA
-. .   .          .
-. .   .          .
-. .   .          .
 
 En el rango que va de A1:C3 para la extraccion de datos se define la formula =IMPORTACION_SQL() como:
 
@@ -54,6 +51,3 @@ Siendo el resultado:
 2 001 01/01/1997 BRA   INSERT INTO Country_Table (COD,YEAR,PAIS) VALUES (001,19970101,'BRA');
 
 3 003 06/06/1998 ITA   INSERT INTO Country_Table (COD,YEAR,PAIS) VALUES (002,19980606,'ITA');
-. .   .          .     .
-. .   .          .     .
-. .   .          .     .
