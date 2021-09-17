@@ -26,33 +26,6 @@ la entidad y los registros
 
 - Tabla: Cadena de caracteres que define el nombre que tendra dicha entidad y/o tabla.
 - Columnas: Valor numerico que define la cantidad de atributos y/o campos que tendra la tabla.
-- Valores(): Valores define 1) las celdas donde estan contenidas los atributos de la tabla 2) las celdas donde
-estan contenido los registros que cada atributo tiene y 3) la definicion del tipo de valor contenido en los registros
+- Valores(): Valores define a) Las celdas donde estan contenidas los atributos de la tabla b) Las celdas donde
+estan contenido los registros que cada atributo tiene y c) La definicion del tipo de valor contenido en los registros
 de cada entidad, siendo 1 para valores tipo String y 0 para valores tipo Int.
-
-Ejemplo:
-
- A    B          C
-
-1 COD YEAR PAIS 
-
-
-2 002 01/01/1997 BRA
-
-
-3 003 06/06/1998 ITA
-
-
-En el rango que va de A1:C3 para la extraccion de datos se define la formula =IMPORTACION_SQL() como:
-
-=IMPORTACION_SQLSERVER("Country_Table";3;$A$1;$B$1;$C$1;$A2;$B2;$C2;0;0;1)
-
-Siendo el resultado:
-
- A    B          C   D
-
-1 COD YEAR PAIS
-
-2 001 01/01/1997 BRA INSERT INTO Country_Table (COD,YEAR,PAIS) VALUES (001,19970101,'BRA');
-
-3 003 06/06/1998 ITA INSERT INTO Country_Table (COD,YEAR,PAIS) VALUES (002,19980606,'ITA');
