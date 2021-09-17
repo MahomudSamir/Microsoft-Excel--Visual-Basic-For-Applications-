@@ -26,9 +26,9 @@ la entidad y los registros
 
 - Tabla: Cadena de caracteres que define el nombre que tendra dicha entidad y/o tabla.
 - Columnas: Valor numerico que define la cantidad de atributos y/o campos que tendra la tabla.
-- Valores(): Valores define 1) las celdas donde estan contenidas los atributos de la tabla
-2) las celdas donde estan contenido los registros que cada atributo y 3) la definicion del tipo de valor
-contenido en los registros de cada entidad, siendo 1 para valores tipo String y 0 para valores tipo Int.
+- Valores(): Valores define 1) las celdas donde estan contenidas los atributos de la tabla 2) las celdas donde
+estan contenido los registros que cada atributo y 3) la definicion del tipo de valor contenido en los registros
+de cada entidad, siendo 1 para valores tipo String y 0 para valores tipo Int.
 
 Ejemplo:
 
