@@ -82,6 +82,12 @@ For Each Txt In Valores()
     
         If (Mid(Cadena, ((Posicion + Posicion2 + 1) + ConteoB), 2) = "0,") Then
         
+            If (IsEmpty(Txt) = True) Or (IsNull(Txt) = True) Or (Txt = "") Then 'Nulidad en valores numericos Empty, Null y ""
+            
+            Txt = "NULL"
+            
+            End If
+        
             Cadena2 = Cadena2 + CStr(Txt) + ","
         
         ElseIf (Mid(Cadena, ((Posicion + Posicion2 + 1) + ConteoB), 2) = "1,") Then
@@ -89,6 +95,10 @@ For Each Txt In Valores()
             If (Mid(CStr(Txt), 3, 1) = "/") And (Mid(CStr(Txt), 6, 1) = "/") Then 'Formato Strings Fecha
             
                 Cadena2 = Cadena2 + "'" + Mid(CStr(Txt), 7, 4) + Mid(CStr(Txt), 4, 2) + Mid(CStr(Txt), 1, 2) + "',"
+        
+            ElseIf (InStr(1, Txt, "'", vbTextCompare) > 0) Then 'Formato Apostrofe
+            
+                Cadena2 = Cadena2 + "'" + Replace(Txt, "'", "''", 1, 1, vbTextCompare) + "',"
         
             Else
         
