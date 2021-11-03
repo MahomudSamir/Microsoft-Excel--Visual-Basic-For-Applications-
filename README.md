@@ -28,4 +28,4 @@ la entidad y los registros
 - Columnas: Valor numerico que define la cantidad de atributos y/o campos que tendra la tabla.
 - Valores(): Valores define a) Las celdas donde estan contenidas los atributos de la tabla b) Las celdas donde
 estan contenido los registros que cada atributo tiene y c) La definicion del tipo de valor contenido en los registros
-de cada entidad, siendo 1 para valores tipo String y 0 para valores tipo Int.
+de cada entidad, siendo 1 para valores tipo String y 0 para valores tipo Numeric.
